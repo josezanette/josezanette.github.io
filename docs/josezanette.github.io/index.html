@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Engenharia com intenção.</title>
+<meta name="description" content="Portfólio de José Eduardo Zanette, Estudante de Ciência da Computação construindo o futuro com precisão e curiosidade.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+<script>
+  /* Aplica o tema salvo antes do primeiro paint, evitando "flash" de tema errado */
+  (function(){
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="logo"><span class="dot"></span>José Eduardo Zanette</a>
+
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#tecnologias">Tecnologias</a></li>
+      <li><a href="#estatisticas">Estatísticas</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Alternar modo escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a href="#contato" class="nav-cta">Contato</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu móvel">
+  <a href="#sobre">Sobre</a>
+  <a href="#projetos">Projetos</a>
+  <a href="#tecnologias">Tecnologias</a>
+  <a href="#estatisticas">Estatísticas</a>
+  <a href="#contato" class="mm-cta">Contato</a>
+</nav>
+
+<main id="top">
+ 
+  <section class="hero">
+    <canvas id="hero-canvas"></canvas>
+    <div class="hero-content">
+      <span class="eyebrow"><span class="dot"></span>Ciência da Computação 1º semestre</span>
+      <h1 class="reveal" id="hero-title">Engenharia<br><em>com intenção.</em></h1>
+      <p class="sub reveal" id="hero-sub">Construo meu futuro com precisão, curiosidade e um gosto particular por experiências bem desenhadas, do algoritmo ao pixel.</p>
+      <div class="hero-actions reveal" id="hero-actions">
+        <a href="#projetos" class="btn btn-primary">Ver projetos</span></a>
+        <a href="#contato" class="btn btn-ghost">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>scroll</span><span class="line"></span></div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="about" id="sobre">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <span class="eyebrow-sm reveal">Sobre</span>
+        <h2 class="reveal" style="margin-bottom:32px;">Formado pela lógica<br>movido pela curiosidade.</h2>
+        <p class="reveal"><strong>Estou no primeiro semestre de Ciência da Computação</strong>, construindo uma base sólida em algoritmos, estruturas de dados e lógica digital, 
+          aplicando cada conceito em projetos reais, não apenas em exercícios.</p>
+        <p class="reveal">Fora da sala de aula, 
+          exploro o desenvolvimento de jogos como forma de unir raciocínio técnico e narrativa. 
+          Acredito que <strong>bom software é, antes de tudo, uma decisão.</strong></p>
+          <a href="./pages/sobre.html" rel="noopener noreferrer" class="btn btn-ghost">Conheça-Me </a>
+      </div>
+      <div class="about-visual reveal">
+        <div class="glyph">def <span class="accent">construir</span>(ideia):
+    enquanto ideia.incompleta:
+        refinar(ideia)
+        testar(ideia)
+    <span class="accent">return</span> ideia.pronta
+  
+
+<span class="accent">></span> status: em progresso
+<span class="accent">></span> semestre: 01
+<span class="accent">></span> foco: precisão</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETOS -->
+  <section class="projects" id="projetos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Projetos</span>
+        <h2>Três formas de resolver problemas.</h2>
+        <p>Cada projeto parte de uma pergunta diferente, narrativa, lógica ou algorítmica e chega a uma solução construída à mão.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="card reveal">
+          <span class="card-index">01 / Jogo</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 10h.01M15 10h.01M8 15c1.5 1.5 6.5 1.5 8 0"/></svg></div>
+          <h3>A Frequência 87.6</h3>
+          <p>Um jogo de terror psicológico em Python e Pygame, ambientado no fictício Vale Sombrio. Sistemas narrativos próprios, mais de 25 eventos dinâmicos e uma atmosfera construída evento por evento.</p>
+          <div class="card-tags"><span>Python</span><span>Pygame</span><span>Game Design</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">02 / Hardware</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h6v6H9z"/><path d="M4 9h2M4 15h2M18 9h2M18 15h2M9 4v2M15 4v2M9 18v2M15 18v2"/></svg></div>
+          <h3>ALU de 8 bits</h3>
+          <p>Unidade lógica aritmética projetada no LogiSim para o laboratório de Circuitos Digitais, com suporte a soma, subtração, NAND e XOR, validada até o último display.</p>
+          <div class="card-tags"><span>LogiSim</span><span>Lógica Digital</span></div>
+        </article>
+        <article class="card reveal">
+          <span class="card-index">03 / Algoritmos</span>
+          <div class="card-icon"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h16"/><circle cx="18" cy="12" r="2"/></svg></div>
+          <h3>Estruturas & Algoritmos</h3>
+          <p>Uma coleção de soluções construídas ao longo do primeiro semestre, de manipulação de dicionários a lógica de movimentação em tabuleiro, sempre priorizando clareza sobre atalhos.</p>
+          <div class="card-tags"><span>Python</span><span>Algoritmos</span></div>
+        </article>
+        <a href="./pages/jogo.html" rel="noopener noreferrer" class="btn btn-ghost">Mini-Game</a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="tech" id="tecnologias">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Tecnologias</span>
+        <h2>As ferramentas por trás de cada projeto.</h2>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-item"><span class="tech-name">Python</span><span class="tech-cat">Linguagem</span></div>
+        <div class="tech-item"><span class="tech-name">Pygame</span><span class="tech-cat">Framework</span></div>
+        <div class="tech-item"><span class="tech-name">JavaScript</span><span class="tech-cat">Linguagem</span></div>
+        <div class="tech-item"><span class="tech-name">HTML & CSS</span><span class="tech-cat">Front-end</span></div>
+        <div class="tech-item"><span class="tech-name">LogiSim</span><span class="tech-cat">Circuitos digitais</span></div>
+        <div class="tech-item"><span class="tech-name">Git</span><span class="tech-cat">Versionamento</span></div>
+        <div class="tech-item"><span class="tech-name">Algoritmos</span><span class="tech-cat">Fundamentos</span></div>
+        <div class="tech-item"><span class="tech-name">Estruturas de Dados</span><span class="tech-cat">Fundamentos</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ESTATÍSTICAS -->
+  <section class="stats" id="estatisticas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Estatísticas</span>
+        <h2>Progresso, em números.</h2>
+      </div>
+      <div class="stats-grid reveal">
+        <div class="stat"><span class="num"><span class="accent">01</span></span><span class="label">Semestre em andamento</span></div>
+        <div class="stat"><span class="num" data-count="3">0</span><span class="label">Projetos construídos</span></div>
+        <div class="stat"><span class="num" data-count="25">0</span><span class="label">Eventos narrativos criados</span></div>
+        <div class="stat"><span class="num" data-count="4">0</span><span class="label">Operações lógicas na ALU</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow-sm">Contato</span>
+        <h2>Me conheça!</h2>
+        <p>Aberto a projetos, troca de conhecimentos, colaborações e conversas sobre software, jogos e lógica.</p>
+      </div>
+      <div class="contact-actions reveal">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zanettejoseeduardo@gmail.com&su=Seu%20via%20Assunto" target="_blank" class="btn btn-primary">Enviar um e-mail</span></a>
+        <a href="https://github.com/josezanette" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">Ver projetos GitHub</a>
+      </div>
+      <p class="contact-email reveal"><a href="mailto:zanettejoseeduardo@gmail.com">zanettejoseeduardo@gmail.com</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 José Eduardo Zanette. Construído com atenção aos detalhes.</p>
+    <ul class="footer-links">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#projetos">Projetos</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>

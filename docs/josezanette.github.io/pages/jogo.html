@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo — José Eduardo Zanette</title>
+<meta name="description" content="Pulo Zero. Um mini-jogo de pular obstáculos, feito em canvas puro.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/game.css">
+<script>
+  (function(){
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>José Eduardo Zanette</a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="jogo.html">Jogo</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="theme-toggle" aria-label="Alternar modo escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a href="#contato-jogo" class="nav-cta">Contato</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu móvel">
+  <a href="index.html#sobre">Início</a>
+  <a href="sobre.html">Sobre mim</a>
+  <a href="jogo.html">Jogo</a>
+  <a href="index.html#contato" class="mm-cta">Contato</a>
+</nav>
+<br>
+<br>
+<br>
+
+<main id="top">
+  </div>
+<br>
+<br>
+  <!-- INTRO -->
+  <section style="padding-top:40px; padding-bottom:20px;">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow-sm">Um intervalo</span>
+        <h2>Pulo Zero.</h2>
+        <p>Pulo Zero. Um mini-jogo de pular obstáculos, feito em canvas puro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOGO -->
+  <section style="padding-top:0; padding-bottom:60px;">
+    <div class="wrap">
+      <div class="jump-game reveal" data-jump-game>
+        <canvas class="jump-game__canvas"></canvas>
+        <div class="jump-game__hud">
+          <span class="jump-game__score">0</span>
+          <span class="jump-game__best">Recorde 0</span>
+        </div>
+        <div class="jump-game__overlay">
+          <span class="jump-game__badge"><span class="dot"></span>Pulo Zero</span>
+          <p class="jump-game__title">Toque, clique ou pressione espaço</p>
+          <p class="jump-game__subtitle">para pular os obstáculos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMO JOGAR -->
+  <section class="tech" id="como-jogar">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Como jogar</span>
+        <h2>Simples assim.</h2>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-item"><span class="tech-name">Espaço / clique</span><span class="tech-cat">Pular</span></div>
+        <div class="tech-item"><span class="tech-name">Obstáculos</span><span class="tech-cat">Desviar pulando</span></div>
+        <div class="tech-item"><span class="tech-name">Velocidade</span><span class="tech-cat">Aumenta com o tempo</span></div>
+        <div class="tech-item"><span class="tech-name">Recorde</span><span class="tech-cat">Salvo no navegador</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato-jogo">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow-sm">Gostou?</span>
+        <h2>Veja o resto do portfólio.</h2>
+      </div>
+      <div class="contact-actions reveal">
+        <a href="../index.html" class="btn btn-primary">Voltar ao início</a>
+        <a href="sobre.html" class="btn btn-ghost">Ver Sobre mim</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 José Eduardo Zanette. Construído com atenção aos detalhes.</p>
+    <ul class="footer-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="sobre.html">Sobre mim</a></li>
+      <li><a href="jogo.html">Jogo</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../js/script.js"></script>
+<script src="../js/game.js"></script>
+</body>
+</html>

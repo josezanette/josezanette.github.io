@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sobre, José Eduardo Zanette</title>
+<meta name="description" content="Sobre José Eduardo Zanette, Estudante de Ciência da Computação, apaixonado por tecnologia, jogos e aprendizado contínuo.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+<script>
+  (function(){
+    const stored = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    document.documentElement.setAttribute('data-theme', stored || (prefersDark ? 'dark' : 'light'));
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="logo"><span class="dot"></span>José Eduardo Zanette</a>
+
+    <ul class="nav-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#sobremim">Trajetória</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#jogos">Games</a></li>
+      <li><a href="#musicas">Músicas</a></li>
+    </ul>
+
+    <div class="nav-right"> 
+      <button class="theme-toggle" aria-label="Alternar modo escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+      </button>
+      <a href="#contato-sobre" class="nav-cta">Contato</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Menu móvel">
+  <a href="../index.html">Início</a>
+  <a href="#sobremim">Trajetória</a>
+  <a href="#hobbies">Hobbies</a>
+  <a href="#jogos">Games</a>
+  <a href="malito:zanettejoseeduardo@gmail.com" class="mm-cta">Contato</a>
+</nav>
+
+
+<main id="top">
+
+  <div class="breadcrumb reveal">
+  </div>
+
+  <!-- INTRO -->
+  <section style="padding-top:40px; padding-bottom:40px;">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow-sm">Sobre mim</span>
+        <h2>Curioso por natureza,<br>disciplinado por escolha.</h2>
+        <p>Itapuca, Rio Grande do Sul. Estudante de Ciência da Computação na UPF, movido por tecnologia, lógica e aprendizado contínuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE MIM -->
+  <section class="about" id="sobremim">
+    <div class="wrap about-grid">
+      <div class="profile-photo reveal">
+        <img src="../assets/20260308_171038.jpg" alt="Foto de José Eduardo Zanette" loading="lazy"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+        <div class="placeholder" style="display:none;">Foto de José Eduardo<br>./assets/20260308_171038.jpg</div>
+      </div>
+      <div class="about-text">
+        <span class="eyebrow-sm reveal" id="trajetoria">Trajetória</span>
+        <h2 class="reveal" style="margin-bottom:32px;">Da lógica jurídica<br>à lógica de máquina.</h2>
+        <p class="reveal">Moro em <strong>Itapuca</strong>, uma cidade de cerca de 2 mil habitantes no Rio Grande do Sul, onde praticamente todo mundo se conhece.</p>
+        <p class="reveal">Estudei por vários anos com foco em Direito, até perceber que minha verdadeira paixão sempre esteve na tecnologia. Desde criança convivo com computadores e tudo que envolve o meio digital — o que influenciou diretamente minha escolha profissional.</p>
+        <p class="reveal">Hoje curso <strong>Ciência da Computação na Universidade de Passo Fundo (UPF)</strong>, construindo uma base sólida em lógica, algoritmos e desenvolvimento de software.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOBBIES -->
+  <section class="tech" id="hobbies">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm" id="hobbies">Hobbies</span>
+        <h2>Como ocupo meu tempo livre.</h2>
+      </div>
+      <div class="tech-grid reveal">
+        <div class="tech-item"><span class="tech-name">Videogames</span><span class="tech-cat">Lazer</span></div>
+        <div class="tech-item"><span class="tech-name">Vídeos e lives</span><span class="tech-cat">Lazer</span></div>
+        <div class="tech-item"><span class="tech-name">Novas tecnologias</span><span class="tech-cat">Interesse</span></div>
+        <div class="tech-item"><span class="tech-name">Programação</span><span class="tech-cat">Interesse</span></div>
+        <div class="tech-item"><span class="tech-name">Viagens</span><span class="tech-cat">Lazer</span></div>
+        <div class="tech-item"><span class="tech-name">Customização de carros</span><span class="tech-cat">Interesse</span></div>
+        <div class="tech-item"><span class="tech-name">MT-03</span><span class="tech-cat">Motociclismo</span></div>
+        <div class="tech-item"><span class="tech-name">Discord</span><span class="tech-cat">Social</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOGOS FAVORITOS -->
+  <section class="projects" id="jogos">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Jogos favoritos</span>
+        <h2>O que costumo jogar.</h2>
+      </div>
+      <div class="rank-list reveal">
+        <div class="rank-row"><span class="rank-num">01</span><span class="rank-name">Red Dead Redemption 2</span><span class="rank-tag">Ação / Mundo aberto</span></div>
+        <div class="rank-row"><span class="rank-num">02</span><span class="rank-name">Resident Evil 4 Remake</span><span class="rank-tag">Survival horror</span></div>
+        <div class="rank-row"><span class="rank-num">03</span><span class="rank-name">The Last of Us Part I</span><span class="rank-tag">Narrativo</span></div>
+        <div class="rank-row"><span class="rank-num">04</span><span class="rank-name">The Last of Us Part II</span><span class="rank-tag">Narrativo</span></div>
+        <div class="rank-row"><span class="rank-num">05</span><span class="rank-name">Counter-Strike 2</span><span class="rank-tag">Competitivo</span></div>
+        <div class="rank-row"><span class="rank-num">06</span><span class="rank-name">GTA San Andreas</span><span class="rank-tag">Clássico</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MÚSICAS FAVORITAS -->
+  <section class="about" id="musicas">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow-sm">Músicas favoritas</span>
+        <h2>A trilha sonora do dia a dia.</h2>
+        <p>Rock clássico, alternativo e um pouco de tudo que marcou época.</p>
+      </div>
+      <div class="rank-list reveal">
+        <div class="rank-row"><span class="rank-num">01</span><span class="rank-name">Metallica — Enter Sandman</span><span class="rank-tag">Metal</span></div>
+        <div class="rank-row"><span class="rank-num">02</span><span class="rank-name">Nirvana — Smells Like Teen Spirit</span><span class="rank-tag">Grunge</span></div>
+        <div class="rank-row"><span class="rank-num">03</span><span class="rank-name">AC/DC — Highway to Hell</span><span class="rank-tag">Hard Rock</span></div>
+        <div class="rank-row"><span class="rank-num">04</span><span class="rank-name">Guns N' Roses — Sweet Child O' Mine</span><span class="rank-tag">Hard Rock</span></div>
+        <div class="rank-row"><span class="rank-num">05</span><span class="rank-name">Linkin Park — Numb</span><span class="rank-tag">Nu Metal</span></div>
+        <div class="rank-row"><span class="rank-num">06</span><span class="rank-name">The Beatles — Hey Jude</span><span class="rank-tag">Clássico</span></div>
+        <div class="rank-row"><span class="rank-num">07</span><span class="rank-name">Pink Floyd — Another Brick in the Wall</span><span class="rank-tag">Progressivo</span></div>
+        <div class="rank-row"><span class="rank-num">08</span><span class="rank-name">Led Zeppelin — Stairway to Heaven</span><span class="rank-tag">Clássico</span></div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <br>
+</main>
+
+  <!-- CONTATO -->
+  <section class="contact" id="contato-sobre" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head center reveal">
+        <span class="eyebrow-sm">Vamos conversar</span>
+        <h2>Aberto a novas conexões.</h2>
+      </div>
+      <div class="contact-actions reveal">
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zanettejoseeduardo@gmail.com&su=Seu%20via%20Assunto" class="btn btn-primary">Entrar em contato</a>
+        <a href="../index.html" class="btn btn-ghost">Voltar ao início</a>
+      </div>
+    </div>
+  </section>
+
+<footer>
+  <div class="wrap footer-inner">
+    <p>© 2026 José Eduardo Zanette. Construído com atenção aos detalhes.</p>
+    <ul class="footer-links">
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="#sobremim">Trajetória</a></li>
+      <li><a href="https://mail.google.com/mail/?view=cm&fs=1&to=zanettejoseeduardo@gmail.com&su=Seu%20via%20Assunto">Contato</a></li>
+    </ul>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>
